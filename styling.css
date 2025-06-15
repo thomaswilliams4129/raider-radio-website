@@ -1,76 +1,108 @@
 #logo {
-    width:120px;
+  width: 120px;
 }
 
+/* Define @font-face */
+@font-face {
+  font-family: "SSHS"; /* Name your font */
+  src: url("/font/NCAA-Syracuse-Orange.otf") format("opentype"); /* Path to your OTF font file */
+  /* You can include additional font file formats for better browser support */
+}
+
+/* Apply the font to specific elements */
+
 .nav-link {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .navbar-nav li {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .title {
-    text-align: center;
-    margin-top: 85px;
+  font-family: "SSHS", sans-serif;
+  text-align: center;
+}
+
+.outlined-text {
+  font-size: 80px;
+  color: white; /* Set the main text color */
+  text-shadow: -1px -1px 0 red,
+    /* Shadow on top-left for outline effect */ 1px -1px 0 red,
+    /* Shadow on top-right for outline effect */ -1px 1px 0 red,
+    /* Shadow on bottom-left for outline effect */ 1px 1px 0 red; /* Shadow on bottom-right for outline effect */
 }
 
 #mainLogo {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 #mainLogo img {
-    width: 450px;
+  width: 450px;
 }
 
-
 #listen-button {
-    text-align: center;
-    margin-top: 200px;
+  text-align: center;
+  margin-top: 500px;
+  font-family: "SSHS", sans-serif;
 }
 
 #bio {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .container {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .col {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .border-bottom {
-    width: 200px;
+  width: 200px;
 }
 
-
 .navbar-brand img:hover {
-    opacity: 0.3 !important;
+  opacity: 0.3 !important;
 }
 
 .btn {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .table .thead-dark th {
-    background-color: rgba(0,0,0,.9)!important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .appStore {
-    margin-top: 150px;
-    text-align: center;
-    margin-bottom: 100px;
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .appStore img {
-    width: 200px;
+  width: 200px;
 }
 
 .appStore img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
+}
+
+#traditionImg img {
+  width: 500px; /* Set the desired width */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+}
+
+#mainHeader {
+  margin-top: 0px;
+  width: 100%; /* Set the width of the div */
+  height: 1500px; /* Set the height of the div */
+  background-image: url(/images/kadurFlag.JPG);
+  background-size: cover; /* Set the background size to cover the entire div */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center center; /* Center the background image horizontally and vertically */
 }
